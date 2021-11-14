@@ -1,0 +1,28 @@
+@mixin sityRadio {
+  display: block;
+  text-align: center;
+  background-color: $lightBeige;
+  border-radius: 0.75rem;
+  padding: 0.3rem 0.625rem;
+  border: 0.0625rem solid $lightBeige;
+  box-sizing: border-box;
+  width: 6rem;
+}
+
+@mixin styleLink {
+  text-decoration: none;
+  color: $black;
+}
+
+@mixin moment {
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid $grey;
+}
+
+%selectBtn {
+  border: none;
+  background-color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+}

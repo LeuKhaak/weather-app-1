@@ -1,0 +1,40 @@
+@import "../../../assets/styles/styles.scss";
+
+.current {
+  background-color: $searchBgi;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.25rem;
+  @include tabletSmall {
+    font-size: 1.1rem;
+  }
+  .notFound {
+    color: $notFound;
+    background-color: $white;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    left: 50vw;
+    top: 7.5rem;
+    @include mobile {
+      font-size: 1.5rem;
+      left: 45vw;
+    }
+  }
+  .currentTime {
+    font-weight: 600;
+    text-align: center;
+  }
+  .currentWrapper {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .currentItem {
+      margin-right: 0.5rem;
+    }
+  }
+}

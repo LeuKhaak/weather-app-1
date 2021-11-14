@@ -1,0 +1,47 @@
+@import "../../../assets/styles/styles.scss";
+
+.searchWrapper {
+  display: flex;
+  margin: 0 auto 0 auto;
+  @include tabletSmallSecond {
+    flex-direction: column;
+  }
+  .search {
+    width: 17rem;
+    border: 1px dashed $darkGrey;
+    box-sizing: border-box;
+    border-radius: 0.75rem;
+    margin-right: 2rem;
+    position: relative;
+    @include tabletSmallSecond {
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+    }
+    .searchInput {
+      background: transparent;
+      border: none;
+      padding: 0.25rem;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      display: flex;
+      align-items: center;
+      outline: none;
+      &::placeholder {
+        text-align: left;
+        font-size: 1rem;
+      }
+    }
+  }
+  .selectedCity {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem;
+    width: auto;
+    font-size: 1.5rem;
+    .cityName {
+      display: block;
+      text-transform: capitalize;
+      padding-left: 0.5rem;
+    }
+  }
+}

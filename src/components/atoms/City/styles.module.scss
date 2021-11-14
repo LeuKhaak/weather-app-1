@@ -1,0 +1,16 @@
+@import "../../../assets/styles/styles.scss";
+
+.cityLabel {
+  display: flex;
+  @include styleLink;
+  .cityName {
+    @include sityRadio;
+  }
+  .cityInput {
+    appearance: none;
+  }
+  .cityInput:checked ~ .cityName {
+    @include sityRadio;
+    border: 0.0625rem solid $borderBrown;
+  }
+}

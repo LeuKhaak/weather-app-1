@@ -1,0 +1,17 @@
+@import "../../../assets/styles/styles.scss";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .selectPeriod {
+    margin: 0 auto 0 auto;
+    padding: 1rem;
+    width: 10rem;
+    display: flex;
+    justify-content: space-around;
+    .selectButton {
+      @extend %selectBtn;
+    }
+  }
+}

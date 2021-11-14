@@ -1,0 +1,11 @@
+@import "../../../assets/styles/styles.scss";
+
+.precipitation {
+  margin-left: 0.5rem;
+  .moment {
+    @include moment;
+    @include tabletSmallSecond {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
