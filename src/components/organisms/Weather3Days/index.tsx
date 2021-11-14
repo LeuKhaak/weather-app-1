@@ -24,6 +24,7 @@ interface IDataList {
   city: { timezone: number };
 }
 interface IProps3Days {
+  daysAmount: string;
   currentCity: string;
   match: { params: { city: string } };
 }
@@ -77,9 +78,9 @@ const Weather3Days: React.FC<IProps3Days> = (props: IProps3Days) => {
   };
 
   useEffect(() => {
-    if (props.match) getDays3Weather(props.match.params.city);
+    if (props.daysAmount !== "days8") getDays3Weather(props.currentCity);
     // eslint-disable-next-line
-  }, [props.currentCity, props.match]);
+  }, [props]);
 
   return (
     <div className={styles.days3}>

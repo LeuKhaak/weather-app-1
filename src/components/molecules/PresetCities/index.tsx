@@ -17,7 +17,7 @@ const PresetСities: React.FC<IChangeCity> = (props: IChangeCity) => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [cities, setCities] = useState<ICity[]>([
     { city: "Minsk", id: "Minsk" },
-    { city: "Moskva", id: "Moskva" },
+    { city: "Moscow", id: "Moscow" },
     { city: "Bratislava", id: "Bratislava" },
   ]);
 

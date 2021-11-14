@@ -52,6 +52,7 @@ function Weather() {
         <Route exact path={`/days3/:city`}>
           {({ match }) => (
             <Weather3Days
+              daysAmount={daysAmount}
               currentCity={currentCity}
               match={match as { params: { city: string } }}
             />
