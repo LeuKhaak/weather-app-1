@@ -10,9 +10,11 @@ import { useLocation, useHistory } from "react-router-dom";
 
 function Weather() {
   const location = useLocation();
-  const [daysAmount, setDaysAmount] = useState("days3");
+  const [daysAmount, setDaysAmount] = useState(
+    location.pathname !== "/" ? location.pathname.slice(1, 6) : "days3"
+  );
   const [currentCity, setcurrentCity] = useState(
-    location.pathname !== "/" ? location.pathname.replace(/.+\//g, "") : "Minsk"
+    location.pathname !== "/" ? location.pathname.slice(7) : "Minsk"
   );
 
   const newDaysAmount = (arg: string) => {

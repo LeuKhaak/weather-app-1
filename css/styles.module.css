@@ -13,62 +13,6 @@ body {
   margin: 0 auto 0 auto;
 }
 
-.days3 {
-  padding: 1rem 0.5rem;
-  background-color: #eecfec;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.days3 .days3Title {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.days3 .partOfDay {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: auto;
-  padding: 0.25rem;
-  border-radius: 0.5rem;
-}
-
-@media (max-width: 575px) {
-  .days3 .partOfDay {
-    border: 1px solid #fff;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-}
-
-.days3 .partOfDay .moment {
-  display: block;
-  padding: 0.25rem;
-  border-radius: 0.5rem;
-  border: 1px solid #a8a8a6;
-}
-
-@media (max-width: 575px) {
-  .days3 .partOfDay .moment {
-    margin-bottom: 0.5rem;
-  }
-}
-
-.days3 .partOfDay .moment:not(:first-child) {
-  margin-left: 0.5rem;
+.weather {
+  background-color: #def8f6;
 }
