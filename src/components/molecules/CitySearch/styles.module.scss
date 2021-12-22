@@ -20,6 +20,8 @@
     .searchInput {
       background: transparent;
       border: none;
+      width: calc(100% - 0.5rem);
+      border-radius: 0.75rem;
       padding: 0.25rem;
       font-size: 1.25rem;
       line-height: 1.75rem;
