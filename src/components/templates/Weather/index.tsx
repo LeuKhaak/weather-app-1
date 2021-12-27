@@ -14,7 +14,7 @@ function Weather() {
     location.pathname.slice(1, 6) === "days8" ? "days8" : "days3"
   );
   const [currentCity, setcurrentCity] = useState(
-    location.pathname.slice(7) === "r-app-1"
+    location.pathname.slice(1, 5) !== "days"
       ? "Minsk"
       : location.pathname.slice(7)
   );
